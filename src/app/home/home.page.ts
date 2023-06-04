@@ -63,7 +63,7 @@ export class HomePage implements OnInit {
     console.log('home: readTable: stmt=', stmt);
 
     const ret: DBSQLiteValues = await db.query(stmt, []);
-    console.log('home: createTable: ret=', ret);
+    console.log('home: readTable: ret=', ret);
     return ret;
   };
 }
