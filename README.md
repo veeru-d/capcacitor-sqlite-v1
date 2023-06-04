@@ -21,6 +21,8 @@ npm run build:cap:android
 adb -s <device> install -r -t android/app/build/outputs/apk/debug/app-debug.apk
 copy testdbSQLite.db to /data/data/io.ionic.starter/databases using Android Studio's Device File Explorer
 ```
+You can open this db in `DB Browser for SQLite` app, open `teach` table and select `img` column.
+You can see the blob's png image.
 
 # test
 just launch `cap-sqlite` app in Android phone (Android 12 or newer) (not tested in any other versions)
